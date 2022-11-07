@@ -10,10 +10,10 @@ services:
     restart: always
     environment:
       TZ: "Europe/Moscow"
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
   
   wordpress:
     depends_on:
